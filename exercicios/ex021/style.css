@@ -1,0 +1,20 @@
+h1 {
+    background-color: lightgray;
+    height: 324px;
+    width: 299px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: darkslategray;
+
+}
+
+h1:hover {
+    background-color: pink;
+
+}
+
+a {
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+}
