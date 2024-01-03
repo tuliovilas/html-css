@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em telas pequenas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead,
+        tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody>tr:nth-child(odd) {
+            /* 2n-1 */
+            background-color: white;
+            background-attachment: ;
+        }
+
+        tbody>tr:nth-child(even) {
+            /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod voluptatum hic mollitia veniam pariatur, assumenda
+        laborum veritatis natus nam consectetur vel eligendi minus, magni ex qui sunt molestiae expedita est?</p>
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>08</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>01</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>02</td>
+                </tr>
+                <tr>
+                    <td>iPad Mini</td>
+                    <td>09</td>
+                    <td>07</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>00</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>Tv 40"</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>10</td>
+                    <td>60</td>
+                    <td>06</td>
+                    <td>08</td>
+                    <td>07</td>
+                    <td>50</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>PlayStation4</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>82</td>
+                    <td>07</td>
+                    <td>24</td>
+                    <td>90</td>
+                    <td>41</td>
+                    <td>80</td>
+                    <td>07</td>
+                    <td>24</td>
+                    <td>77</td>
+                </tr>
+                <tr>
+                    <td>Galaxy S20</td>
+                    <td>25</td>
+                    <td>47</td>
+                    <td>25</td>
+                    <td>10</td>
+                    <td>27</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>57</td>
+                    <td>54</td>
+                    <td>11</td>
+                    <td>00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
